@@ -1,0 +1,411 @@
+.mainRight { float: right; width: 73.05882%; }
+@media screen and (max-width: 900px) { .mainRight { float: none; width: 100%; } }
+
+.detailTop {
+    position: relative;
+}
+.detailTop .intro {
+    width: 45.73269%;
+    max-width: 450px;
+    float: left;
+    margin-left: 2.41546%;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.detailTop .intro .title {
+    color: #000;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/*右边简介*/
+@media screen and (max-width: 1200px) {
+    .detailTop .intro .title {
+        font-size: 24px;
+    }
+}
+.detailTop .intro .deVideo {
+    width: 21.55963%;
+    max-width: 94px;
+    position: absolute;
+    bottom: 18px;
+    left: 51.12721%;
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 80;
+}
+.detailTop .intro .deVideo a {
+    display: block;
+    background: #F2CB2F;
+    position: relative;
+    color: #000;
+    border-radius: 6px;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.detailTop .intro .deVideo a i {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -22px;
+    margin-bottom: 17.02128%;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    color: #000;
+}
+.detailTop .intro .deVideo a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    top: 0;
+    margin-top: 27.65957%;
+    border: solid transparent;
+    border-width: 9px 15px;
+    border-left-color: #000;
+}
+.detailTop .intro .deVideo a:hover i {
+    margin-bottom: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.detailTop .intro .deVideo a:hover:after {
+    content: '';
+    margin-top: 40.42553%;
+}
+@media screen and (max-width: 980px) {
+    .detailTop .intro .deVideo a i {
+        display: none;
+    }
+    .detailTop .intro .deVideo a:after {
+        margin-top: 40.42553%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .detailTop .intro .deVideo {
+        width: 70px;
+        position: static;
+        margin: 10px;
+        margin-left: 0;
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0); }
+}
+@media screen and (max-width: 700px) {
+    .detailTop .intro .addthis_sharing_toolbox {
+        margin-bottom: 12px; }
+}
+.detailTop .intro .con li {
+    color: #000;
+}
+.detailTop .intro .con li a {
+    color: #000;
+}
+.detailTop .intro .con li a:hover i {
+    color: #6cb239;
+}
+@media screen and (min-width: 1600px) {
+    .detailTop .intro {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .detailTop .intro {
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+/*tab标题*/
+.rightTab {
+    margin-top: 4.83092%;
+    color: #333;
+    margin-bottom: 3%;
+}
+.rightTab > .clearfix {
+    max-width: 710px;
+    width: 100%;
+    position: relative;
+    height: 68px;
+}
+.rightTab .tabMove {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0s;
+    -moz-transition: 0s;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    -ms-transition: 0s;
+}
+.rightTab .tab {
+    float: left;
+    width: 25%;
+    height: 68px;
+    font-size: 16px;
+    background: #B6B6B6;
+    text-align: center;
+    cursor: pointer;
+    border-left: 1px solid #fff;
+}
+.rightTab .tab:first-child {
+    border-left: none;
+}
+.rightTab .tab i {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    color: #fff;
+    line-height: 1.1;
+}
+.rightTab .tab:hover, .rightTab .tab.active {
+    background: #6cb239;
+}
+.rightTab .tab:hover i, .rightTab .tab.active i {
+    color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+    .rightTab .tab {
+        height: 40px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 575px) { .rightTab .tab { width: 50%; border-bottom: 1px solid #fff; font-size: 14px; } }
+.rightTab .tabContent { border: 1px solid #e5e5e5; display:none; padding: 10px; }
+
+
+/*���*/
+.mainContact {
+    margin-bottom: 25px;
+}
+
+.mainContact .contactForm .box {
+    width: 47.5%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContact .contactForm .box {
+        width: 100%;
+    }
+}
+.mainContact .contactForm #Enquire {
+    min-height: 150px;
+}
+
+.mainContact .contactForm label {
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.mainContact .contactForm input,
+.mainContact .contactForm textarea {
+    border: 1px solid #e3e3e3;
+    padding: 13px;
+    width: 100%;
+    background: #E4E4E4;
+}
+.mainContact .contactForm input.focusOn,
+.mainContact .contactForm textarea.focusOn {
+    background: #fff;
+}
+
+.mainContact .contactForm .abSubmit .btn-primary {
+    background: transparent;
+    width: 42.94118%;
+    max-width: 146px;
+    min-width: 110px;
+    text-align: center;
+    height: 40px;
+    color: #555;
+    border: 1px solid #e3e3e3;
+}
+
+.mainContact .contactForm .abSubmit .btn-primary:hover, .mainContact .contactForm .abSubmit .btn-primary.active {
+    background: #6cb239;
+    color: #fff;
+}
+
+.mainContact .contactForm .abSubmit .btn-primary:first-child {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContact .contactForm .abSubmit {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .mainContact .contactForm {
+        width: 100%;
+    }
+}
+.mainContact .title {
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+@media screen and (max-width: 1080px) {
+    .mainContact .title {
+        margin-bottom: 0;
+    }
+}
+#contactCode {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+#contactCode #code {
+    width: 84px;
+    display: inline-block;
+    padding: 5px;
+    color: #8D8D8D;
+    margin-right: 15px;
+}
+
+#contactCode .codeImg {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.mainContact .comName {
+    color: #000;
+}
+.mainContact .title {
+    color: #000;
+}
+.mainContact .conType {
+    margin-bottom: 6.13497%;
+    margin-top: 2.45399%;
+}
+.mainContact .pull_left {
+    width: 47.94118%;
+    float: left;
+}
+@media screen and (max-width: 1200px) {
+    .mainContact .pull_left {
+        width: 100%;
+    }
+}
+.mainContact .pull_right {
+    width: 46.76471%;
+    float: right;
+}
+@media screen and (max-width: 1200px) {
+    .mainContact .pull_right {
+        width: 100%;
+    }
+}
+.mainContact .contactForm {
+    padding: 4.40252%;
+    border: 1px solid #DADADA;
+    padding-top: 10px;
+}
+.mainContact .contactForm .box,
+.mainContact .contactForm .line {
+    width: 48%;
+}
+.mainContact .contactForm .box.text,
+.mainContact .contactForm .line.text {
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .mainContact .contactForm .box,
+    .mainContact .contactForm .line {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainContact .contactForm .box,
+    .mainContact .contactForm .line {
+        width: 100%;
+    }
+    .mainContact .contactForm .box input,
+    .mainContact .contactForm .line input {
+        padding: 8px; }
+}
+@media screen and (max-width: 1080px) {
+    .mainContact .contactForm {
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .mainContact .contactForm {
+        padding: 10px;
+    }
+}
+
+.carousel-indicators li{
+    width: 14px;
+    height: 14px;
+    background-color: #b2b2b2;
+    border: none;
+}
+
+.carousel-indicators .active{
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    background-color: #000;
+}
+.carousel-indicators {
+    bottom: -31px;
+    left: 50px;
+}
+
+.relate .box, .relate .line {
+    width: 23.87879%;
+}
+.relate .box a{
+    margin-bottom: 20px;
+    color: #6cb239;
+}
+.relate .box img {
+    width: 96%;
+    border: 1px solid #E4E4E4;
+}
+
+.relate .title {
+    display: block;
+    font-size: 16px;
+    width: 23.0303%;
+    text-align: center;
+    height: 58px;
+    line-height: 58px;
+    background: #6cb239;
+    color: #fff;
+    min-width: 150px;
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.public_list .intro .title, .mainContact .comName {
+    font-size: 24px;
+    line-height: 1.2;
+}
+@media screen and (max-width: 880px) {
+    .public_list .intro .title, .mainContact .comName {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .public_list .intro .title, .mainContact .comName {
+        font-size: 20px;
+    }
+}
+
+.min_banner {
+    width: 50%;
+    float: left;
+    position: relative;
+}

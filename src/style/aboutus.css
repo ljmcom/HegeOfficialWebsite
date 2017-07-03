@@ -1,0 +1,30 @@
+/*banner部分start*/
+.com_banner {
+    padding-top: 18.22917%;
+    background: url(../image/12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*正文内容start*/
+.main {
+    margin-top: 2.08333%;
+    margin-bottom: 3.125%;
+}
+/*正文右边*/
+.fadeInLeft{
+    padding-left: 18px;
+}
+.mainRight {
+    float: right;
+    width: 73.05882%;
+}
+@media screen and (max-width: 900px) {
+    .mainRight {
+        float: none;
+        width: 100%;
+    }
+}
+.danCon .aboutpic{
+    width: 100%;
+}

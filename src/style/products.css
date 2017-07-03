@@ -1,0 +1,78 @@
+/*banner部分start*/
+.com_banner {
+    padding-top: 18.22917%;
+    background: url(../image/12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*banner部分end*/
+
+/*主体内容右边样式*/
+.mainRight {
+    float: right;
+    width: 73.05882%;
+    padding-right: 40px;
+}
+@media screen and (max-width: 900px) {
+    .mainRight {
+        float: none; width: 100%;
+    }
+}
+.two_level {
+    margin-bottom: 2.01288%;
+}
+.two_level:last-child {
+    margin-bottom: 0;
+}
+.two_level .lanTitle {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.two_level .box, .two_level .line {
+    width: 14.81481%;
+}
+@media screen and (max-width: 1200px) {
+    .two_level .box, .two_level .line {
+        width: 23%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .two_level .box, .two_level .line {
+        width: 32%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .two_level .box, .two_level .line {
+        width: 48%;
+    }
+}
+.two_level .box {
+    margin-bottom: 1.61031%;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.two_level .box a img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.two_level .box:hover img {
+    -webkit-box-shadow: 0 0 5px 1px #004990;
+    -moz-box-shadow: 0 0 5px 1px #004990;
+    box-shadow: 0 0 5px 1px #004990;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width: 700px) {
+    .two_level .box {
+        margin-bottom: 18px;
+    }
+}
+.two_level .title {
+    color: #004990;
+    margin-top: 6px;
+}

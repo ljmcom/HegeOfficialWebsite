@@ -1,0 +1,23 @@
+/*banner部分start*/
+.com_banner {
+    padding-top: 18.22917%;
+    background: url("../image/12.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*banner部分end*/
+
+/*主体右边的样式*/
+.main{
+    padding-bottom: 30px;
+}
+.mainRight {
+    float: right;
+    width: 73.05882%;
+}
+@media screen and (max-width: 900px) {
+    .mainRight {
+        float: none;
+        width: 100%;
+    }
+}

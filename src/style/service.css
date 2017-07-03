@@ -1,0 +1,90 @@
+/*banner部分start*/
+.com_banner {
+    padding-top: 18.22917%;
+    background: url("../image/12.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*banner部分end*/
+
+/*主题内容右边样式start*/
+.main{
+    padding-bottom: 20px;
+}
+.mainRight {
+    float: right;
+    width: 73.05882%;
+    /*padding-right: 20px;*/
+}
+@media screen and (max-width: 900px) {
+    .mainRight {
+        float: none;
+        width: 100%;
+    }
+}
+.asidePro .secList {
+    position: static;
+    min-width: 100%;
+    z-index: 99;
+    background: #2c6ab6;
+    display: none;
+    margin-bottom: 0;
+    margin-top:1px;
+}
+.ent-img-fr .playvideo {
+    display:inline-block;
+    position:relative;
+    width:48%;
+    float:right;
+    border: 5px solid rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.ent-img-fr .playvideo img {
+    min-width:100%;
+    max-width:100%;
+    width:100%
+}
+.ent-img-fr .playvideo .playbtn {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background-size: cover;
+}
+.ent-img-fr .playvideo:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+ul[class^=ent-img] li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-left: 15px;
+}
+.ent-img4 li {
+    width: 23%;
+}
+.ent-img4 li img{
+    width: 100%;
+}
+.ent-img-fr{
+    position: relative;
+}
+.ent-img2{
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    float: right;
+    overflow: hidden;
+}
+.ent-img2 li{
+    width: 38%;
+    float: right;
+    margin-left: 20px;
+}

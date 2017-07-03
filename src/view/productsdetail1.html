@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title> ProductsDetail</title>
+    <link rel="stylesheet" href="../style/lanrenzhijia.css">
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <link rel="stylesheet" href="../style/common.css"/>
+    <link rel="stylesheet" href="../style/index.css"/>
+    <link rel="stylesheet" href="../style/productsdetail.css"/>
+    <link rel="stylesheet" href="../style/animate.css"/>
+    <link rel="stylesheet" href="../style/font-roboto.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+    <script src="../../lib/jquery/jquery.min.js"></script>
+
+    <style>
+        /*轮播图样式*/
+        /*非移动端使用背景*/
+        .hg_banner{
+            width: 50%;
+            float: left;
+            position: relative;
+        }
+        .img_pc {
+            width: 100%;
+            height:320px;
+            display: block;
+            background-position: center;
+            background-size: cover;
+        }
+        /*移动端使用img*/
+        .img_mobile{
+            width: 100%;
+            display: block;
+        }
+        .img_mobile>img{
+            width: 100%;
+            display: block;
+        }
+        .com_banner{
+            height: 320px;
+        }
+
+    </style>
+</head>
+<body>
+<!--公共头部导航-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../image/logo.png" alt=""/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right active">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT Us </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICE</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<!--公共banner部分-->
+<!--<div class="com_banner"></div>-->
+<div class="com_banner">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="../image/58d8ba20a4c19.jpg" alt="">
+            </li>
+            <li>
+                <img src="../image/58d8cc64e995b.jpg" alt="">
+            </li>
+            <li>
+                <img src="../image/5858f55c3ed32.jpg" alt="">
+            </li>
+            <li>
+                <img src="../image/5858f55c3ed32.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+<!--公共分享部分-->
+<div class="sharebg">
+    <ul class="shareList center">
+        <li><a href="#" class="sharefb" target="_blank"></a></li>
+        <li><a href="#" class="shareyt" target="_blank"></a></li>
+        <li><a href="#" class="sharetw" target="_blank"></a></li>
+        <li><a href="#" class="sharegl" target="_blank"></a></li>
+        <li><a href="#" class="sharein" target="_blank"></a></li>
+        <li>
+            <div class="showForm">
+                <div class="btn"></div>
+                <form class="searchForm box" id="form" method="post">
+                    <input type="text" name="keyword" class="search" id="search" value="" placeholder="Search...">
+                    <button class="searchBtn" type="submit" name="submit"></button>
+                </form>
+            </div>
+        </li>
+        <script type="text/javascript">
+            //            点击出现搜索框
+            $('.showForm .btn').click(function(){
+                $(this).toggleClass('active');
+                $('.searchForm').toggleClass('active');
+            });
+            //            搜索框的提交事件
+            $("#form").submit(function () {
+                var keyword = $("#search").val();
+                var action = '/search.html' + '/keyword/' + keyword;
+                $("#form").attr('action', action);
+            });
+        </script>
+    </ul>
+</div>
+<!--公共正文标题-->
+<div class="mainPath center">
+    <div class="path">
+        <span>
+            <a href="/">Home</a>
+                <span> > </span>
+            <a href="#">About Us</a>
+                <span> > </span>
+            <a href="#">Archispace Introduction</a>
+        </span>
+    </div>
+</div>
+
+<!--正文内容-->
+<div class="main center clearfix">
+    <!--正文右边内容-->
+    <div class="mainRight">
+        <div class="detailTop clearfix">
+            <!--中间轮播图-->
+            <div class="hg_banner">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="" class="img_mobile hidden-sm hidden-md hidden-lg">
+                                <img src="../image/slide_01_640x340.jpg" alt="">
+                            </a>
+                            <a href="" class="img_pc hidden-xs" style="background-image: url('../image/57c62dee6c733.jpg');"></a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="img_mobile hidden-sm hidden-md hidden-lg">
+                                <img src="../image/slide_02_640x340.jpg" alt="">
+                            </a>
+                            <a href="" class="img_pc hidden-xs" style="background-image: url('../image/57c91d359b8f2.jpg');"></a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="img_mobile hidden-sm hidden-md hidden-lg">
+                                <img src="../image/slide_03_640x340.jpg" alt="">
+                            </a>
+                            <a href="" class="img_pc hidden-xs" style="background-image: url('../image/58d8ba20a4c19.jpg');"></a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="img_mobile hidden-sm hidden-md hidden-lg">
+                                <img src="../image/slide_04_640x340.jpg" alt="">
+                            </a>
+                            <a href="" class="img_pc hidden-xs" style="background-image: url('../image/58d8cc64e995b.jpg');"></a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="img_mobile hidden-sm hidden-md hidden-lg">
+                                <img src="../image/5858f55c3ed32.jpg" alt="">
+                            </a>
+                            <a href="" class="img_pc hidden-xs" style="background-image: url('../image/5858f55c3ed32.jpg');"></a>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--右边简介-->
+            <div class="intro">
+                <div class="title">Flat-Pack House</div>
+                <div class="addthis_sharing_toolbox"></div>
+                <div class="deVideo">
+                    <a data-mfp-src="#" href="javascript:void(0);" data-product-id="14719148108633708" class="popvj playBtn" >                    <i>Video</i></a>
+                </div>
+
+                <ul class="con">
+                    <li class="tel">
+                        <a href="tel:0086-512-52971918">Tel: <i>0086-512-52971918</i></a>
+                    </li>
+                    <li class="moblie">
+                        <a href="tel:086-15262506220" >Moblie: <i>086-15262506220</i></a>
+                    </li>
+                    <li class="mail">
+                        <a href="mailto:info@csarchispace.com" >E-mail: <i>info@csarchispace.com</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightTab">
+            <!--tab标题-->
+            <div class="clearfix">
+                <div class="tabMove">
+                    <div class="tab"><i>Description</i></div>
+                    <div class="tab"><i>Parameter</i></div>
+                    <div class="tab"><i>Typical Applications</i></div>
+                    <div class="tab"><i>Pictures</i></div>
+                </div>
+            </div>
+            <!--内容-->
+
+        </div>
+        <!--调查表格-->
+        <div class="mainContact">
+            <div class="title uppercase">Inquiry</div>
+            <form name="form" class="contactForm" id="form1" method="post">
+                <div class="justify">
+                    <div class="form-group box formTextWaper">
+                        <label for="Name">Name:*</label>
+                        <input type="text" name="name" id="Name" />
+                    </div>
+                    <div class="form-group box formTextWaper">
+                        <label for="Company">Company Name:*</label>
+                        <input type="text" name="company"  id="Company" />
+                    </div>
+                    <div class="form-group box formTextWaper">
+                        <label for="Phone">Tel:</label>
+                        <input type="text" name="phone"  id="Phone" />
+                    </div>
+                    <div class="form-group box formTextWaper">
+                        <label for="country">Country:*</label>
+                        <input type="text" name="country"  id="country" />
+                    </div>
+                    <div class="form-group box formTextWaper">
+                        <label for="Email">E-mail:*</label>
+                        <input type="text" name="email"  id="Email" />
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-group box text formTextWaper">
+                        <label for="Enquire">Message:*</label>
+                        <textarea  rows="6" name="content" id="Enquire"></textarea>
+                    </div>
+                </div>
+                <div class="abSubmit">
+                    <div id="contactCode">
+                        <div class="form-group formTextWaper">
+                            <input type="text" class="form-control code" id="code" name="code" placeholder="Code:" />
+                            <div class="codeImg"><img class="verify" src="" alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="hidden" id="pid" name="pid" value="14719148108633708"/>
+                        <button type="submit" class="btn btn-primary active" onclick="ga('send', 'event', 'email', 'click', 'contactform');">Submit</button>
+                        <button type="reset" class="btn btn-primary">Refill</button>
+                    </div>
+                </div>
+            </form>
+            <div class="relate">
+                <span class="title">Related Product</span>
+                <div class="content justify">
+                    <div class="box wrap">
+                        <a href="../image/14_03.jpg">
+                            <img class="img-zoomable" src="../image/14_03.jpg" alt="Prekit K-House" />
+                        </a>
+                        <span><a href="#">Prekit K-House</a></span>
+                    </div>
+
+                    <div class="box wrap">
+                        <a href="../image/14_03.jpg">
+                            <img class="img-zoomable" src="../image/14_03.jpg" alt="Prekit T-House" />
+                        </a>
+                        <span><a href="#">Prekit T-House</a></span>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--正文左边内容-->
+    <div class="aside fadeInLeft animated">
+        <span class="title">About Us</span>
+        <ul class="list">
+            <li class="active">
+                <a href="#">Archispace Introduction</a>
+            </li>
+            <li class="">
+                <a href="#">Organization</a>
+            </li>
+            <li  class="">
+                <a href="#">Why Archispace</a>
+            </li>
+            <li  class="">
+                <a href="#">Brand Story</a>
+            </li>
+            <li  class="">
+                <a href="#">News</a>
+            </li>
+            <li  class="">
+                <a href="#">History</a>
+            </li>
+            <li  class="">
+                <a href="#">Awards &amp; Certification</a>
+            </li>
+            <li  class="">
+                <a href="#">Public Interest</a>
+            </li>
+            <li  class="">
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--公共底部-->
+<div id="n_footer">
+    <div class="center justify">
+        <!--底部左边-->
+        <div class="n_left box">
+            <ul class="shareList footShare">
+                <li><a href="#" class="sharefb"></a></li>
+                <li><a href="#" class="shareyt"></a></li>
+                <li><a href="#" class="sharetw"></a></li>
+                <li><a href="#" class="sharegl"></a></li>
+                <li><a href="#" class="sharein"></a></li>
+            </ul>
+            <!--联系方式-->
+            <ul class="contact">
+                <li>
+                    <span>Mobile:</span>
+                    <a href="tel:008613702261266">+86-13702261266</a><br/>
+                    <a href="tel:008613703076958">+86-13703076958</a>
+                </li>
+                <li>
+                    <span>Tel:</span>
+                    <a href="tel:0086075785617896">+86-757-85617896</a><br/>
+                    <a href="tel:0086075785623727">+86-757-85623727</a>
+                </li>
+                <li>
+                    <span>Fax:</span>
+                    <a href="tel:0086075785612020">+86-757-85612020</a>
+                </li>
+                <li>
+                    <span>Tel Operator:</span>
+                    <a href="tel:4001162288">400-116-2288</a>
+                </li>
+                <li>
+                    <p>
+                        <span>Website:</span>
+                        <a href="http://www.fchege.com">http://www.fchege.com</a><br/>
+                        <a href="www.prefabhouse.com.cn">www.prefabhouse.com.cn</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span>E-mail:</span>
+                        <a href="mailto:chinahege@fchge.com">chinahege@fchge.com</a><br/>
+                        <a href="mailto:fchege@fchege.com">fchege@fchege.com</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!--底部右边-->
+        <div class="n_right justify box">
+            <dl class="box">
+                <dt>About Us</dt>
+                <dd><a href="#">Archispace Introduction</a></dd>
+                <dd><a href="#">Organization</a></dd>
+                <dd><a href="#">Brand Story</a></dd>
+                <dd><a href="#">Why Archispace</a></dd>
+                <dd><a href="#">News</a></dd>
+                <dd><a href="#">History</a></dd>
+                <dd><a href="#">Awards &amp; Certification</a></dd>
+                <dd><a href="#">Public Interest</a></dd>
+                <dd><a href="#">Blog</a></dd>
+            </dl>
+            <dl class="box">
+                <dt>Products</dt>
+                <dd><a href="#">Temporary Building</a></dd>
+                <dd><a href="#">Permanent and Semi Permanent Buildings</a></dd>
+                <dd><a href="#">Special Container</a></dd>
+
+            </dl>
+            <dl class="box">
+                <dt>Solutions</dt>
+                <dd><a href="#">Sort By Products</a></dd>
+                <dd><a href="#">Sort By Application</a></dd>
+            </dl>
+            <dl class="box">
+                <dt>Service</dt>
+                <dd><a href="#">Design</a></dd>
+                <dd><a href="#">Worldwide Shipping</a></dd>
+                <dd><a href="#">Supporting &amp; After-sale service</a></dd>
+
+            </dl>
+        </div>
+    </div>
+</div>
+<!--公共底部信息样式-->
+<div class="n_copyRight">
+    <div class="center">
+        <p>Copyright © YAHGEE MODULAR HOUSE (GROUP) CO., LTD.</p>
+        <div class="support">
+            Technical by <a href="http://www.singoo.cc/" target="_blank">SINGOO</a>
+        </div>
+    </div>
+</div>
+<!--公共回到顶部按钮-->
+<div id="goTop">
+    <span></span>
+</div>
+<!--公共的侧边窗口-->
+<div id="chatToolBox">
+    <ul>
+        <li id="chatToolMail">
+            <i></i>
+            <a id="chatMessageBtn" class="popform" href="javascript:void(0);" data-mfp-src="/Home/Inquiry/message">Contact Us!</a>
+        </li>
+    </ul>
+</div>
+<!--公共的Feedback表格-->
+<div class="mfp-bg mfp-ready">
+    <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-s-ready mfp-iframe-holder">
+            <div class="mfp-content">
+                <div class="mfp-form-custom mfp-form-order" style="max-height:569px">
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                    <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="feedback.html"></iframe>
+                </div>
+            </div>
+            <div class="mfp-preloader">Loading...</div>
+        </div>
+    </div>
+</div>
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!--<script src="../script/template-native.js"></script>-->
+<!--<script src="../script/swipe.js"></script>-->
+<!--<script src="../script/index.js"></script>-->
+<script src="../script/common.js"></script>
+<script src="../script/jquery.flexslider-min.js"></script>
+<script src="../script/zooming.js"></script>
+<script>
+    $(function () {
+        // 轮播图
+        $('.flexslider').flexslider({
+            directionNav: true,
+            pauseOnAction: true
+        });
+        // 轮播图
+        $('.flexslider2').flexslider({
+            directionNav: true,
+            pauseOnAction: true
+        });
+    })
+
+    var zooming = new Zooming({
+        customSize: {
+            width: 800,
+            height: 440
+        }
+    });
+    zooming.listen('.img-zoomable');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/*banner部分start*/
+.com_banner {
+    padding-top: 18.22917%;
+    background: url(../image/12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*banner部分end*/
+
+/*标题样式*/
+.mainPath .path{
+    margin-left: 2px;
+}
+
+/*主题内容*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    letter-spacing: 0; position: relative;
+}
+.center {
+    width: 100%;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+}
+.main{
+    padding-bottom: 30px;
+}
+
+/*右边表格样式*/
+.mainContact {
+    margin-bottom: 25px;
+}
+
+.mainContact .contactForm .box {
+    width: 47.5%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.mainContact .contactForm .text{
+    width: 100%;
+}
+.mainContact .pull_left{
+    width: 47.9%;
+}
+
+.mainContact .pull_right{
+    width: 46.7%;
+}
+@media screen and (max-width:1200px ) {
+    .mainContact .pull_right{
+        width: 100%;
+    }
+    .mainContact .pull_left {
+        width: 100%;
+    }
+    .main{
+        padding-left: 40px;
+    }
+}
+@media screen and (min-width:1200px ){
+    .mainContact .pull_left{
+        width: 47.9%;
+    }
+
+    .mainContact .pull_right{
+        width: 46.7%;
+    }
+}
+
+.contactForm{
+    border: 1px solid #6cb239;
+    padding: 4.40252%;
+    padding-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .mainContact .contactForm .box {
+        width: 100%;
+    }
+}
+.mainContact .contactForm #Enquire {
+    min-height: 150px;
+}
+
+.mainContact .contactForm label {
+    margin-bottom: 6px;
+    display: inline-block;
+    font-weight: 200;
+    color: #000;
+}
+
+.mainContact .contactForm input,
+.mainContact .contactForm textarea {
+    border: 1px solid #e3e3e3;
+    padding: 13px;
+    width: 100%;
+    background: #E4E4E4;
+}
+.mainContact .contactForm input.focusOn,
+.mainContact .contactForm textarea.focusOn {
+    background: #fff;
+}
+
+/*提交按钮样式*/
+.mainContact .contactForm .abSubmit .btn-primary {
+    background: transparent;
+    width: 42.94118%;
+    max-width: 146px;
+    min-width: 110px;
+    text-align: center;
+    height: 40px;
+    line-height: 26.667px;
+    color: #555;
+    border: 1px solid #e3e3e3;
+}
+
+.mainContact .contactForm .abSubmit .btn-primary:hover,
+.mainContact .contactForm .abSubmit .btn-primary.active {
+    background: #6cb239;
+    color: #fff;
+}
+
+.mainContact .contactForm .abSubmit .btn-primary:first-child {
+    margin-right: 12px;
+}
+.mainContact .contactForm .abSubmit{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContact .contactForm .abSubmit {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .mainContact .contactForm {
+        width: 100%;
+    }
+}
+.mainContact .title {
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #000;
+}
+.justify .box {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1080px) {
+    .mainContact .title {
+    margin-bottom: 0;
+    }
+}
+
+/*验证码样式*/
+#contactCode {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+#contactCode #code {
+    width: 84px;
+    display: inline-block;
+    padding: 5px;
+    color: #8D8D8D;
+    margin-right: 15px;
+}
+
+#contactCode .codeImg {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/*地图样式*/
+#map{
+    padding-top: 20px;
+}

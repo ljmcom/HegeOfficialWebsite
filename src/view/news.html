@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>NEWS</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <link rel="stylesheet" href="../style/common.css"/>
+    <link rel="stylesheet" href="../style/news.css"/>
+    <link rel="stylesheet" href="../style/animate.css"/>
+    <link rel="stylesheet" href="../style/font-roboto.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+    <script src="../../lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<!--公共头部导航-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../image/logo.png" alt=""/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right active">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT Us </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICE</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT US</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<!--公共banner部分-->
+<div class="com_banner"></div>
+<!--公共分享部分-->
+<div class="sharebg">
+    <ul class="shareList center">
+        <li><a href="#" class="sharefb" target="_blank"></a></li>
+        <li><a href="#" class="shareyt" target="_blank"></a></li>
+        <li><a href="#" class="sharetw" target="_blank"></a></li>
+        <li><a href="#" class="sharegl" target="_blank"></a></li>
+        <li><a href="#" class="sharein" target="_blank"></a></li>
+        <li>
+            <div class="showForm">
+                <div class="btn"></div>
+                <form class="searchForm box" id="form" method="post">
+                    <input type="text" name="keyword" class="search" id="search" value="" placeholder="Search...">
+                    <button class="searchBtn" type="submit" name="submit"></button>
+                </form>
+            </div>
+        </li>
+        <script type="text/javascript">
+            //            点击出现搜索框
+            $('.showForm .btn').click(function(){
+                $(this).toggleClass('active');
+                $('.searchForm').toggleClass('active');
+            });
+            //            搜索框的提交事件
+            $("#form").submit(function () {
+                var keyword = $("#search").val();
+                var action = '/search.html' + '/keyword/' + keyword;
+                $("#form").attr('action', action);
+            });
+        </script>
+    </ul>
+</div>
+<!--公共正文标题-->
+<div class="mainPath center">
+    <div class="path">
+        <span>
+            <a href="/">Home</a>
+                <span> > </span>
+            <a href="#">About Us</a>
+                <span> > </span>
+            <a href="#">Archispace Introduction</a>
+        </span>
+    </div>
+</div>
+
+<!--主题内容部分-->
+<div class="main center clearfix">
+    <!--正文右边内容-->
+    <div class="mainRight">
+        <div class="frameleft">
+            <div class="fup">
+                <span class="spantitle">NEWS</span>
+            </div>
+            <div class="fcontent">
+                <div class="newsleft fl">
+                    <ul>
+                        <li class="center">
+                            <a class="infolist" title="传雅虎CEO巴茨无意谋求连任 2013年离职" href="/index.php?ac=article&at=read&did=18">
+                                <img src="../image/news1.jpg" class="img03"/>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="newsright fl">
+                    <ul class="textlist">
+                        <li>
+                            <a class="infolist" href="#">钢结构术语中英文对照，按字母排序，相当于钢结构界的大字典啊！</a>
+                            <span class="names">2016-09-30</span>
+                        </li>
+                        <li>
+                            <a class="infolist" href="#">钢结构包边系统</a>
+                            <span class="names">2016-09-30</span>
+                        </li>
+                        <li>
+                            <a class="infolist" href="#">钢结构施工员主要工作</a>
+                            <span class="names">2016-09-30</span>
+                        </li>
+                        <li>
+                            <a class="infolist" href="#">钢结构包边系统</a>
+                            <span class="names">2016-09-30</span>
+                        </li>
+                        <li>
+                            <a class="infolist" href="#">钢结构施工员主要工作</a>
+                            <span class="names">2016-09-30</span>
+                        </li>
+                        <li>
+                            <a class="infolist" href="#">钢结构施工员主要工作</a>
+                            <span class="names">2016-09-30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--正文左边内容-->
+    <div class="aside fadeInLeft animated">
+        <span class="title">service</span>
+        <ul class="list">
+            <li class="active">
+                <a href="#">Archispace Introduction</a>
+            </li>
+            <li class="">
+                <a href="#">Organization</a>
+            </li>
+            <li  class="">
+                <a href="#">Brand Story</a>
+            </li>
+            <li  class="">
+                <a href="#">News</a>
+            </li>
+            <li  class="">
+                <a href="#">History</a>
+            </li>
+            <li  class="">
+                <a href="#">Awards &amp; Certification</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--公共底部-->
+<div id="n_footer">
+    <div class="center justify">
+        <!--底部左边-->
+        <div class="n_left box">
+            <ul class="shareList footShare">
+                <li><a href="#" class="sharefb"></a></li>
+                <li><a href="#" class="shareyt"></a></li>
+                <li><a href="#" class="sharetw"></a></li>
+                <li><a href="#" class="sharegl"></a></li>
+                <li><a href="#" class="sharein"></a></li>
+            </ul>
+            <!--联系方式-->
+            <ul class="contact">
+                <li>
+                    <span>Mobile:</span>
+                    <a href="tel:008613702261266">+86-13702261266</a><br/>
+                    <a href="tel:008613703076958">+86-13703076958</a>
+                </li>
+                <li>
+                    <span>Tel:</span>
+                    <a href="tel:0086075785617896">+86-757-85617896</a><br/>
+                    <a href="tel:0086075785623727">+86-757-85623727</a>
+                </li>
+                <li>
+                    <span>Fax:</span>
+                    <a href="tel:0086075785612020">+86-757-85612020</a>
+                </li>
+                <li>
+                    <span>Tel Operator:</span>
+                    <a href="tel:4001162288">400-116-2288</a>
+                </li>
+                <li>
+                    <p>
+                        <span>Website:</span>
+                        <a href="http://www.fchege.com">http://www.fchege.com</a><br/>
+                        <a href="www.prefabhouse.com.cn">www.prefabhouse.com.cn</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span>E-mail:</span>
+                        <a href="mailto:chinahege@fchge.com">chinahege@fchge.com</a><br/>
+                        <a href="mailto:fchege@fchege.com">fchege@fchege.com</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!--底部右边-->
+        <div class="n_right justify box">
+            <dl class="box">
+                <dt>About Us</dt>
+                <dd><a href="#">Archispace Introduction</a></dd>
+                <dd><a href="#">Organization</a></dd>
+                <dd><a href="#">Brand Story</a></dd>
+                <dd><a href="#">Why Archispace</a></dd>
+                <dd><a href="#">News</a></dd>
+                <dd><a href="#">History</a></dd>
+                <dd><a href="#">Awards &amp; Certification</a></dd>
+                <dd><a href="#">Public Interest</a></dd>
+                <dd><a href="#">Blog</a></dd>
+            </dl>
+            <dl class="box">
+                <dt>Products</dt>
+                <dd><a href="#">Temporary Building</a></dd>
+                <dd><a href="#">Permanent and Semi Permanent Buildings</a></dd>
+                <dd><a href="#">Special Container</a></dd>
+
+            </dl>
+            <dl class="box">
+                <dt>Solutions</dt>
+                <dd><a href="#">Sort By Products</a></dd>
+                <dd><a href="#">Sort By Application</a></dd>
+            </dl>
+            <dl class="box">
+                <dt>Service</dt>
+                <dd><a href="#">Design</a></dd>
+                <dd><a href="#">Worldwide Shipping</a></dd>
+                <dd><a href="#">Supporting &amp; After-sale service</a></dd>
+
+            </dl>
+        </div>
+    </div>
+</div>
+<!--公共底部信息样式-->
+<div class="n_copyRight">
+    <div class="center">
+        <p>Copyright © YAHGEE MODULAR HOUSE (GROUP) CO., LTD.</p>
+        <div class="support">
+            Technical by <a href="http://www.singoo.cc/" target="_blank">SINGOO</a>
+        </div>
+    </div>
+</div>
+<!--公共回到顶部按钮-->
+<div id="goTop">
+    <span></span>
+</div>
+<!--公共的侧边窗口-->
+<div id="chatToolBox">
+    <ul>
+        <li id="chatToolMail">
+            <i></i>
+            <a id="chatMessageBtn" class="popform" href="javascript:void(0);" data-mfp-src="/Home/Inquiry/message">Contact Us!</a>
+        </li>
+    </ul>
+</div>
+<!--公共的Feedback表格-->
+<div class="mfp-bg mfp-ready">
+    <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-s-ready mfp-iframe-holder">
+            <div class="mfp-content">
+                <div class="mfp-form-custom mfp-form-order" style="max-height:569px">
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                    <iframe class="mfp-iframe" frameborder="0" allowfullscreen="" src="feedback.html"></iframe>
+                </div>
+            </div>
+            <div class="mfp-preloader">Loading...</div>
+        </div>
+    </div>
+</div>
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../script/template-native.js"></script>
+<script src="../script/swipe.js"></script>
+<script src="../script/common.js"></script>
+</body>
+</html>

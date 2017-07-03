@@ -1,0 +1,66 @@
+/*banner部分start*/
+.com_banner {
+    padding-top: 18.22917%;
+    background: url(../image/12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*banner部分end*/
+
+/*主体内容右边的样式*/
+.mainRight{
+    float:right;
+    width: 73.05882%;
+    padding-right: 20px;
+}
+.frameright{float: left;width:218px; overflow:hidden;}
+.newsleft{
+    display: inline-block;
+    width: 30%;
+}
+.img03{
+    width: 100%;
+}
+.newsright{
+    width: 64%;
+    margin-left: 50px;
+}
+.names{
+    float: right;
+}
+
+.frameleft .fup {
+    height: 30px;
+    line-height: 30px;
+    background:#6cb235;
+}
+.frameleft .fcontent {
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.textlist li{
+    line-height: 29px;
+    position: relative;
+}
+
+.frameleft .fup .spantitle {
+    float: left;
+    padding-left:35px;
+    text-align: center;
+    font-size: 14px;
+    color:#fff;
+}
+.frameleft .fup .spanmone {
+    float: right;
+    padding-right: 10px;
+}
+
+.textlist .infolist:before {
+    content: '\e65f';
+    font-size: 16px;
+    font-family: icomoon;
+    position: absolute;
+    left: -17px;
+    top: 0px;
+}

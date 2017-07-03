@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title> Hege</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <link rel="stylesheet" href="../style/index.css"/>
+    <link rel="stylesheet" href="../style/animate.css"/>
+    <link rel="stylesheet" href="../style/font-roboto.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+    <script src="../../lib/jquery/jquery.min.js"></script>
+
+    <style>
+        .sendtitle {
+            font-size: 18px;
+            line-height: 1;
+            color: #6cb239;
+            padding: 15px;
+            border-bottom: 1px solid rgb(226, 226, 226);
+        }
+        #feedback input, #feedback img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        #feedback input {
+            height: 32px;
+        }
+
+        #feedback input, #feedback textarea {
+            width: 100%;
+            line-height: 18px;
+            font-size: 13px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(108, 178, 51);
+            border-image: initial;
+            padding: 6px;
+            background: transparent;
+        }
+
+        input, textarea, select, button {
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            margin: 0em 0em 0em 0em;
+            font: 13.3333px Arial;
+        }
+
+        #feedback ul {
+            max-width: 900px;
+            width: 95%;
+            padding: 10px 15px;
+            margin: 12px auto 0px;
+            text-align: justify;
+            letter-spacing: 0px;
+            font-size: 0px;
+        }
+
+        #feedback ul .box, #feedback ul li {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #feedback li {
+            width: 47.5%;
+            margin-bottom: 15px;
+        }
+
+        #feedback ul > * {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        #feedback label {
+            display: inline-block;
+            line-height: 1;
+            font-size: 12px;
+            padding-bottom: 6px;
+            background: rgb(255, 255, 255);
+        }
+        #feedback label.required::after {
+            content: "*";
+            padding-left: 5px;
+            color: rgb(169, 68, 66);
+        }
+        #feedback input[name="code"] {
+            width: 110px;
+            margin-right: 3px;
+        }
+        #feedback input, #feedback img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        #feedback input {
+            height: 32px;
+        }
+
+        /*提交按钮*/
+        #feedback li.block {
+            width: 100%;
+        }
+        #feedback #sendbutton {
+            width: 200px;
+            line-height: 1;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            margin-top: 5px;
+            background: rgb(108, 178, 57);
+            border-width: 0px;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            padding: 18px 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="margin: 0px; padding: 0px;">
+<div id="feedback">
+    <div class="sendtitle">Feedback</div>
+    <div class="sendcon">
+        <form id="form" name="form1" method="post">
+            <input type="hidden" id="pid" name="pid" value="" />
+            <ul>
+                <li>
+                    <label for="name" class="required">Name :</label>
+                    <div class="formTextWaper"><input name="name" type="text" id="name" value=""/></div>
+                </li>
+                <li>
+                    <label for="company" class="required">Company Name :</label>
+                    <div class="formTextWaper"><input name="company" type="text" id="company" value=""/></div>
+                </li>
+                <li>
+                    <label for="country" class="required">Country :</label>
+                    <div class="formTextWaper"><input name="country" type="text" id="country" value=""/></div>
+                </li>
+                <li>
+                    <label for="phone">Tel :</label>
+                    <div class="formTextWaper"><input name="phone" type="text" id="phone" value=""/></div>
+                </li>
+                <li>
+                    <label for="email" class="required">E-mail :</label>
+                    <div class="formTextWaper"><input name="email" type="text" id="email" value=""/></div>
+                </li>
+                <li class="block">
+                    <label for="content" class="required">Message :</label>
+                    <div class="formTextWaper"><textarea rows="" cols="" name="content" id="content" ></textarea></div>
+                </li>
+                <li>
+                    <div class="formTextWaper">
+                        <input name="code" type="text" id="code" value=""/>
+                        <img class="verify" src="" />
+                    </div>
+                </li>
+                <li class="block">
+                    <div>
+                        <button type="submit" id="sendbutton">Submit</button>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+</body>
+</html>
